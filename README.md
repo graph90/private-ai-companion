@@ -1,4 +1,4 @@
-# private-ai-companion
+# Private Ai Companion
 A self-hosted, uncensored AI companion built with Flask and LangChain — private, customizable, and runs on your own machine.
 ## 🌟 Features
 - 🛡️ **Private** – all conversations stay local on your machine
