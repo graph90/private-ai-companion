@@ -16,7 +16,7 @@ pip3 install flask langchain langchain-ollama requests json
 ## Install Model
 ollama run hf.co/mradermacher/gemma3-4b-it-abliterated-GGUF:Q4_K_M
 
-[HuggingFace Model](https://huggingface.co/mradermacher/gemma3-4b-it-abliterated-GGUF)
+https://huggingface.co/mradermacher/gemma3-4b-it-abliterated-GGUF
 ## 🛠️ Setup Instructions
 git clone https://github.com/graph90/private-ai-companion.git
 cd private-ai-companion
