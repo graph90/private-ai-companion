@@ -10,7 +10,7 @@ A self-hosted, uncensored AI companion built with Flask and LangChain — privat
 ## Requires
 - Python 3
 ## Install dependencies
-pip3 install flask langchain langchain-ollama requests json
+pip3 install flask langchain langchain-ollama requests
 ## Install Ollama
 [Ollama Download](https://ollama.com/download) 
 ## Install Model
