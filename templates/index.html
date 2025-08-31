@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Companion Chat</title>
+</head>
+<body>
+    <h2>Chat with {{ ai_name }}</h2>
+    <div id="chatBox" style="height:300px; overflow:auto; border:1px solid #ccc;"></div>
+    <input type="text" id="userInput" placeholder="Type here..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+    async function sendMessage() {
+        const input = document.getElementById("userInput");
+        const msg = input.value;
+        input.value = "";
+        const response = await fetch("/chat", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({message: msg})
+        });
+        const data = await response.json();
+        const chatBox = document.getElementById("chatBox");
+        chatBox.innerHTML += `<p><b>You:</b> ${msg}</p>`;
+        chatBox.innerHTML += `<p><b>AI:</b> ${data.reply}</p>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Your AI Companion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #0a84ff; /* blue highlight */
+      box-shadow: 0 0 5px #0a84ff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0a84ff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #006edc;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Your AI Companion</h2>
+    <form method="POST">
+      <label for="ai_name">AI Name</label>
+      <input type="text" id="ai_name" name="ai_name" required>
+
+      <label for="personality">Personality</label>
+      <input type="text" id="personality" name="personality" required>
+
+      <label for="flirt_level">Flirt Level</label>
+      <select id="flirt_level" name="flirt_level">
+        <option>low</option>
+        <option>medium</option>
+        <option>high</option>
+      </select>
+
+      <label for="ai_gender">Gender</label>
+      <select id="ai_gender" name="ai_gender">
+        <option>female</option>
+        <option>male</option>
+      </select>
+
+      <label for="user_name">Your Name</label>
+      <input type="text" id="user_name" name="user_name" required>
+
+      <button type="submit">Save & Start Chat</button>
+    </form>
+  </div>
+</body>
+</html>
