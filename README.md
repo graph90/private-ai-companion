@@ -19,6 +19,7 @@ ollama run hf.co/mradermacher/gemma3-4b-it-abliterated-GGUF:Q4_K_M
 https://huggingface.co/mradermacher/gemma3-4b-it-abliterated-GGUF
 ## 🛠️ Setup Instructions
 git clone https://github.com/graph90/private-ai-companion.git
+
 cd private-ai-companion
 ## Run the app
 python3 app.py
