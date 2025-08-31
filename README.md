@@ -33,4 +33,5 @@ This project is free and will always be free — enjoy! 🙂
 If you find this project useful and want to support development:
 - **Bitcoin (on-chain):** `bc1qxzgdwc9pgggram8jtnhsmrhdk5pvw8tx6h7qmj`
 - **Bitcoin Lightning:** `cloudyhubcap91@walletofsatoshi.com`
+
 Every bit of support helps me keep building! 🚀
